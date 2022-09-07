@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,8 +19,8 @@ body {
 }
 
 .App:before {
-  content: ' ';
-  background: url('./assets/nature.jpg') no-repeat center center/cover;
+  content: " ";
+  background: url("./assets/nature.jpg") no-repeat center center/cover;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -29,14 +29,14 @@ body {
   z-index: -1;
 }
 
-h1{
+h1 {
   font-size: 4rem;
   margin: 2rem;
 }
 
-small{
+small {
   margin: 0.3rem;
-  padding:0.3rem;
+  padding: 0.3rem;
   font-size: 1.4rem;
 }
 
@@ -64,7 +64,7 @@ p {
   background-color: rgb(255, 255, 255, 0.4);
 }
 
-.footerDiv{
+.footerDiv {
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +76,7 @@ p {
   transform: rotate(270deg);
   font-size: 2rem;
 }
-.form{
+.form {
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
@@ -93,7 +93,7 @@ p {
   color: #fff;
 }
 
-.searchInput:hover{
+.searchInput:hover {
   border: 2px solid black;
 }
 .button {
@@ -105,4 +105,17 @@ p {
   background-color: rgb(112, 111, 111);
   color: black;
   border: 2px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .footer{
+    width: 100%;
+  }
 }
